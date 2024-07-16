@@ -1,0 +1,34 @@
+package com.insure_sense.BusinessAppMicroservices.api.bancsDbService.bancsdto.product;
+
+import com.insure_sense.BusinessAppMicroservices.api.bancsDbService.bancsdto.common.MsgResponse;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+
+@NoArgsConstructor
+@AllArgsConstructor
+public class HealthQuestionaireResponse {
+
+    private List<HealthQuestionaire> healthQuestionaire;
+
+    private MsgResponse response;
+
+    public List<HealthQuestionaire> getHealthQuestionaire() {
+        return healthQuestionaire;
+    }
+
+    public void setHealthQuestionaire(List<HealthQuestionaire> healthQuestionaire) {
+        this.healthQuestionaire = healthQuestionaire;
+    }
+
+    public MsgResponse getResponse() {
+        return response;
+    }
+
+    public void setResponse(MsgResponse response) {
+        this.response = response;
+    }
+}
